@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding:0;
+}
+.sand-table{
+	margin: 80px auto;
+	box-sizing: border-box;
+		
+}
+.cell{
+	box-sizing: border-box;
+	width: 30px; 
+	height: 30px; 
+	border: 2px solid #aaa;
+	text-align: center;
+	vertical-align: middle;
+	transition: border-color 1s;
+
+}
+.sand-table .cell.close{
+	background-color: #ccc;	
+}
+.sand-table .sand-table td:hover{
+	cursor: zoom-in;
+}
+/* .cell.main{
+	background-color: red;
+} */
+.cell.close.flag{
+	background-image: url(../img/flag.png);
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;	
+}
+.cell.close>*{
+	 display: none; 
+}
+.main>* {
+	width: 70%;
+	height: 70%;
+	display: inline-block;
+	background: url(../img/mine.png) center/contain no-repeat;
+}
+
+.result{
+	text-align: center;
+	color: red;
+	display: none;
+} 
+
+.choose{
+	margin: 0 auto;
+	text-align: center;
+}
+.restart{
+	margin: 30px auto ;
+	border: 2px solid black;
+	width: 100px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.time span{
+	margin: 0 5px
+}
